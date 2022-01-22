@@ -8,12 +8,31 @@ import Roadmap from './components/Roadmap';
 import Contribute from './components/Contribute';
 import Team from './components/Team';
 import scrollToComponent from 'react-scroll-to-component';
+import web3 from './web3';
+//import ico from './ether/ico';
 
 class App extends Component {
 
-
+  state = {
+    myBalance: '',
+    myEther: '',
+    myAddress: ''
+  }
+  /*
+  async componentDidMount(){
+     let accounts = await web3.eth.getAccounts();
+    // let myBalance = await ico.methods.myBalance().call({from:accounts[0]});
+    // myBalance = web3.utils.fromWei(myBalance, 'ether');   
+    //let myBalanceEther = await web3.eth.getBalance(accounts[0]);
+    //myBalanceEther = web3.utils.fromWei(myBalanceEther, 'ether');
+    //let myEther = myBalanceEther;   
+    //let myAddress = await ico.methods.myAddress().call({from:accounts[0]});   
+    //this.setState({myBalance, myEther, myAddress});
+   }
+*/
 
   render() {
+    console.log(web3);
     return (
       <div>
         <nav>

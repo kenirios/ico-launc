@@ -8,8 +8,8 @@ module.exports = {
     },
   },
 
-  contracts_directory: './contracts',
-  contracts_build_directory: './src/eth/abis',
+  contracts_directory: './contracts/',
+  contracts_build_directory: './src/ether/abi/',
 
   compilers: {
     solc: {
