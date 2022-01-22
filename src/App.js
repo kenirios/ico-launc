@@ -8,8 +8,8 @@ import Roadmap from './components/Roadmap';
 import Contribute from './components/Contribute';
 import Team from './components/Team';
 import scrollToComponent from 'react-scroll-to-component';
-import web3 from './web3';
-//import ico from './ether/ico';
+import web3 from 'web3';
+import Ico from './ether/Ico';
 
 class App extends Component {
 
@@ -32,7 +32,7 @@ class App extends Component {
 */
 
   render() {
-    console.log(web3);
+  //  console.log(Ico);
     return (
       <div>
         <nav>
