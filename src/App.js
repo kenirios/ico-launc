@@ -9,9 +9,8 @@ import Contribute from './components/Contribute';
 import Team from './components/Team';
 import scrollToComponent from 'react-scroll-to-component';
 import Web3 from 'web3';
-import web3 from './web3Client';
 import web3Ico from './web3Client';
-//import Ico from './ether/Ico';
+import MyCoin from './ether/web3Ico';
 
 class App extends Component {
 
@@ -34,7 +33,8 @@ class App extends Component {
 
 
   render() {
-  console.log(web3Ico);
+  //console.log(web3Ico);
+  console.log(MyCoin);
     return (
       <div>
         <nav>
