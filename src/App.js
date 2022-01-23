@@ -8,8 +8,10 @@ import Roadmap from './components/Roadmap';
 import Contribute from './components/Contribute';
 import Team from './components/Team';
 import scrollToComponent from 'react-scroll-to-component';
-import web3 from 'web3';
-import Ico from './ether/Ico';
+import Web3 from 'web3';
+import web3 from './web3Client';
+import web3Ico from './web3Client';
+//import Ico from './ether/Ico';
 
 class App extends Component {
 
@@ -18,21 +20,21 @@ class App extends Component {
     myEther: '',
     myAddress: ''
   }
-  /*
+ 
   async componentDidMount(){
-     let accounts = await web3.eth.getAccounts();
-    // let myBalance = await ico.methods.myBalance().call({from:accounts[0]});
-    // myBalance = web3.utils.fromWei(myBalance, 'ether');   
+    //let accounts = await web3.eth.getAccounts();
+    //let myBalance = await web3.methods.myBalance().call({from:accounts[0]});
+    //myBalance = web3.utils.fromWei(myBalance, 'ether');   
     //let myBalanceEther = await web3.eth.getBalance(accounts[0]);
     //myBalanceEther = web3.utils.fromWei(myBalanceEther, 'ether');
     //let myEther = myBalanceEther;   
-    //let myAddress = await ico.methods.myAddress().call({from:accounts[0]});   
+    //let myAddress = await web3.methods.myAddress().call({from:accounts[0]});   
     //this.setState({myBalance, myEther, myAddress});
    }
-*/
+
 
   render() {
-  //  console.log(Ico);
+  console.log(web3Ico);
     return (
       <div>
         <nav>
